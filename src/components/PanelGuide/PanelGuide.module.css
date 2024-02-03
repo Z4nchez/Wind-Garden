@@ -1,0 +1,41 @@
+.PanelGuide{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.PanelGuide::-webkit-scrollbar{
+    display: none;
+}
+.tituloGuia{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+}
+.contenidoGuia{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.articuloGuia{
+    width: 48%;
+    height: auto;
+    font-size: 1.4rem;
+}
+.contenidoGuia img{
+    width: 48%;
+    height: auto;
+    border-radius: 6px;
+}

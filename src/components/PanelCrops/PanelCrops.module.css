@@ -1,0 +1,14 @@
+.PanelCrops{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.PanelCrops::-webkit-scrollbar{
+    display: none;
+}
