@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const regionSchema = new schema({
+const regionSchema = new mongoose.Schema({
     nombre : String,
     titulo : String,
     imagen1 : String,

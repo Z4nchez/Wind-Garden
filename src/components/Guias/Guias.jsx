@@ -9,7 +9,6 @@ function Guias() {
 
   const { menuGuide, setMenuGuide, setListGuides, listGuides } = WGContext();
   const [actualGuide, setActualGuide] = useState({name: "", title: "", article1:"", img1: ""})
-  let nGuide = ""
 
   async function getListGuides () {
     const res = await fetch("/api/Guides");

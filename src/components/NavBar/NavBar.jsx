@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 function NavBar() {
 
-  const { scrollH } = WGContext();
+  const { scrollH, setScrollH, setMenuH, setMenuCrop, setMenuMap, setMenuGuide } = WGContext();
 
   const estilosScroll = {
     isScroll: { height: "5vh", backgroundColor: "rgb(172, 128, 103, 0)" },
@@ -22,16 +22,16 @@ function NavBar() {
         </div>
         <div className={styles.module2}></div>
         <ul className={styles.module1}>
-          <li className={styles.linkCont}>
+          <li className={styles.linkCont} onClick={() => {setScrollH(false); setMenuH(false)}}>
             <Link className={styles.link} href="/">Inicio</Link>
           </li>
-          <li className={styles.linkCont}>
+          <li className={styles.linkCont} onClick={() => {setMenuCrop("0")}}>
             <Link className={styles.link} href="/Crops">Cultivos</Link>
           </li>
-          <li className={styles.linkCont}>
+          <li className={styles.linkCont} onClick={() => {setMenuGuide(-1)}}>
             <Link className={styles.link} href="/Guides">Guias</Link>
           </li>
-          <li className={styles.linkCont}>
+          <li className={styles.linkCont} onClick={() => {setMenuMap(-1)}}>
             <Link className={styles.link} href="/Maps">Mapas</Link>
           </li>
         </ul>        

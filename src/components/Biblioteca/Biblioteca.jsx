@@ -4,10 +4,11 @@ import styles from "../Biblioteca/Biblioteca.module.css"
 import { motion, useInView } from "framer-motion"
 import { WGContext } from "@/context/WindGardenContext"
 import PanelCrops from '../PanelCrops/PanelCrops'
+import CropInfo from '../CropInfo/CropInfo'
 
 function Biblioteca() {
 
-  const { menuCrop, setMenuCrop, setListCrops, listCrops } = WGContext();
+  const { menuCrop, setMenuCrop, setListCrops, actualCrop, setLastMenuCrop } = WGContext();
 
   async function getCrops (cultivo) {
     const res = await fetch("/api/Crops", {
@@ -32,9 +33,9 @@ function Biblioteca() {
       <motion.div className={styles.BibliotecaCont} initial={"isOff"} animate={isInView === true ? "isOn" : "isOff"} transition={{ duration: 0.8, ease: "easeOut" }} variants={estilosDeCarga1}>
         <div className={styles.menuCont}>
             <div className={styles.menuItem} onClick={() => setMenuCrop("0")}>Inicio</div>
-            <div className={styles.menuItem} onClick={() => {getCrops({tipo: "arbol"}); setMenuCrop("1")}}>Arboles</div>
-            <div className={styles.menuItem} onClick={() => {getCrops({tipo: "frutal"}); setMenuCrop("2")}}>Frutales</div>
-            <div className={styles.menuItem} onClick={() => {getCrops({tipo: "hortaliza"}); setMenuCrop("3")}}>Hortalizas</div>
+            <div className={styles.menuItem} onClick={() => {getCrops({tipo: "arbol"}); setMenuCrop("1"); setLastMenuCrop("1")}}>Arboles</div>
+            <div className={styles.menuItem} onClick={() => {getCrops({tipo: "frutal"}); setMenuCrop("2"); setLastMenuCrop("2")}}>Frutales</div>
+            <div className={styles.menuItem} onClick={() => {getCrops({tipo: "hortaliza"}); setMenuCrop("3"); setLastMenuCrop("3")}}>Hortalizas</div>
         </div>
         <div className={styles.contArea}>
           <div className={styles.contenido}>
@@ -46,6 +47,7 @@ function Biblioteca() {
             {menuCrop === "1" && <PanelCrops></PanelCrops>}
             {menuCrop === "2" && <PanelCrops></PanelCrops>}
             {menuCrop === "3" && <PanelCrops></PanelCrops>}
+            {menuCrop === "4" && <CropInfo crop={actualCrop}></CropInfo>}
           </div>
         </div>
       </motion.div>

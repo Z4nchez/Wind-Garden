@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function Home() {
 
-  const { setScrollH } = WGContext();
+  const { setScrollH, setMenuH, setMenuCrop, setMenuMap, setMenuGuide } = WGContext();
   const [scrollTop, setScrollTop] = useState(0);
 
   const ref = useRef(null);
@@ -76,7 +76,7 @@ export default function Home() {
           <div className={styles.topBar}></div>
           <div className={styles.tittle1Cont} ref={ref2}>
             <div className={styles.tittle1}>Biblioteca</div>
-            <Link href="/Crops" className={styles.button1}>Ver Mas</Link>
+            <Link href="/Crops" className={styles.button1} onClick={() => {setMenuCrop("0"); setMenuH(false); setScrollH(false)}}>Ver Mas</Link>
           </div>
           <motion.div className={styles.panel1} initial={"isOff"} animate={isInView2 === true ? "isOn" : "isOff"} transition={{ duration: 0.8, ease: "easeOut"}} variants={estilosDeCarga2}>
             <div className={styles.module1A} >
@@ -117,7 +117,7 @@ export default function Home() {
             </article>
           </motion.div>
           <div className={styles.button2Cont}>
-            <Link className={styles.button2} href="/Guides">Ver mas</Link>
+            <Link className={styles.button2} href="/Guides" onClick={() => {setMenuGuide(-1); setMenuH(false); setScrollH(false)}}>Ver mas</Link>
           </div>
           <div className={styles.bottomBar}></div>
         </div>
@@ -148,7 +148,7 @@ export default function Home() {
                 </div>               
               </div>
               <div className={styles.button3Cont}>
-                <Link className={styles.button3} href="/Maps">Ver mas</Link>
+                <Link className={styles.button3} href="/Maps" onClick={() => {setMenuMap(-1); setMenuH(false); setScrollH(false)}}>Ver mas</Link>
               </div>
             </div>
             <div className={styles.module3B}>

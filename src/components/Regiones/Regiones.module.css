@@ -1,0 +1,168 @@
+.Regiones{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RegionesCont{
+    width: calc(100% - 10vw);
+    height: calc(100% - 10vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--line-color);
+    border-style: double;
+    backdrop-filter: blur(50px);
+}
+.tittlePanel{
+    width: 25%;
+    height: 80%;
+    border-right: 1px solid var(--line-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+}
+.mapaCont{
+    width: 55%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tittle{
+    margin-top: 10%;
+    font-size: 3rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    text-align: right;
+}
+.subtittle{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    text-align: right;
+}
+.mapaCont{
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    height: 70%;
+    border-left: 1px solid var(--colorLinea);
+    overflow: hidden;
+    margin: auto;
+}
+.mapa_c{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+    width: 960px;
+    height: 480px;
+    background-image: url(../../../public/mapaCompleto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity .5s ease-out;
+}
+.mAndino{
+    position: relative;
+    left: 21.4%;
+    top: 59.4%;
+    width: 6.95%;
+    height: 29.53%;
+    filter: drop-shadow(0 0 2px rgb(255, 199, 161));
+}
+.mArabia{
+    position: relative;
+    left: 46.8%;
+    top: 19.8%;
+    width: 7.96%;
+    height: 12.34%;
+    z-index: 3;
+    filter: drop-shadow(0 0 4px rgb(255, 241, 210));
+}
+.mAustralia{
+    position: relative;
+    left: 61.7%;
+    top: 49.9%;
+    width: 9.53%;
+    height: 14.21%;
+    filter: drop-shadow(0 0 4px rgb(255, 199, 161));
+}
+.mGobi{
+    position: relative;
+    left: 38.2%;
+    top: 6.5%;
+    width: 13.82%;
+    height: 13.75%;
+    z-index: 1;
+    filter: drop-shadow(0 0 4px rgb(248, 184, 141));
+}
+.mTurk{
+    position: relative;
+    left: 16.4%;
+    top: 10%;
+    width: 12.89%;
+    height: 15.15%;
+    filter: drop-shadow(0 0 4px rgb(230, 191, 165));
+}
+.mIran{
+    position: relative;
+    left: 1.8%;
+    top: 12.2%;
+    width: 9.92%;
+    height: 10.62%;
+    filter: drop-shadow(0 0 4px rgb(255, 218, 194));
+}
+.mIndia{
+    position: relative;
+    left: 1.3%;
+    top: 14.9%;
+    width: 4.37%;
+    height: 7.81%;
+    filter: drop-shadow(0 0 4px rgb(248, 184, 141));
+}
+.mSahara{
+    position: relative;
+    left: -25.5%;
+    top: 30%;
+    width: 19.68%;
+    height: 25.15%;
+    z-index: 2;
+    filter: drop-shadow(0 0 4px rgb(255, 248, 190));
+}
+.mSonora{
+    position: relative;
+    left: -73.1%;
+    top: 15.15%;
+    width: 10.46%;
+    height: 16.56%;
+    z-index: 2;
+    filter: drop-shadow(0 0 4px rgb(255, 199, 161));
+}
+.mSudafrica{
+    position: relative;
+    left: 48.1%;
+    top: 34.15%;
+    width: 5.54%;
+    height: 13.9%;
+    filter: drop-shadow(0 0 4px rgb(255, 199, 161));
+}
+.mapa_c img{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.mapa_c img:hover{
+    filter: drop-shadow(0 0 0 rgb(85, 0, 0));
+}
