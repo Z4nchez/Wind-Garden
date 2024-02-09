@@ -162,7 +162,7 @@ export default function Home() {
       </section>
       <div className={styles.footer} id="footer">
         <div className={styles.footerCont}>
-          <img src="WindG.svg" alt="logo" className={styles.logoF}/>
+          <img src="windG.svg" alt="logo" className={styles.logoF}/>
           <a className={styles.wLink} href='https://z4nchez.github.io/portfolio'>By Walter Sanchez</a>
           <img src="logom.png" alt="" className={styles.logomF}/>
         </div>
