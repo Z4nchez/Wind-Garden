@@ -73,3 +73,21 @@
 .button:hover{
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (width < 600px){
+    .tittle{
+        font-size: 1.8rem;
+    }
+    .tittleCont{
+        height: 20%;
+    }
+    .articulo{
+        height: 60%;
+        font-size: 1rem;
+    }
+    .button{
+        width: 100px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+}

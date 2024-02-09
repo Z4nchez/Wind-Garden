@@ -32,8 +32,10 @@ function Guias() {
     <div className={styles.Guias} ref={ref}>
         <motion.div className={styles.GuiasCont} initial={"isOff"} animate={isInView === true ? "isOn" : "isOff"} transition={{ duration: 0.8, ease: "easeOut" }} variants={estilosDeCarga1}>
             <div className={styles.menuCont}>
-                <motion.div className={styles.menuItem} onClick={() => {setMenuGuide(-1)}} initial={"isOff"} animate={isInView === true ? "isOn" : "isOff"} transition={{ delay: 0.5, duration: 0.3, ease: "easeOut" }} variants={estilosDeCarga1}>Inicio</motion.div>
-                {listGuides.map((item) => <motion.div key={listGuides.indexOf(item)} className={styles.menuItem} onClick={() => {setMenuGuide(listGuides.indexOf(item)); setActualGuide(item)}} initial={"isOff"} animate={isInView === true ? "isOn" : "isOff"} transition={{ delay: 0.5, duration: 0.3, ease: "easeOut" }} variants={estilosDeCarga1}>{item.title}</motion.div>)}
+                <div className={styles.menuCont2}>
+                  <motion.div className={styles.menuItem} onClick={() => {setMenuGuide(-1)}} initial={"isOff"} animate={isInView === true ? "isOn" : "isOff"} transition={{ delay: 0.5, duration: 0.3, ease: "easeOut" }} variants={estilosDeCarga1}>Inicio</motion.div>
+                  {listGuides.map((item) => <motion.div key={listGuides.indexOf(item)} className={styles.menuItem} onClick={() => {setMenuGuide(listGuides.indexOf(item)); setActualGuide(item)}} initial={"isOff"} animate={isInView === true ? "isOn" : "isOff"} transition={{ delay: 0.5, duration: 0.3, ease: "easeOut" }} variants={estilosDeCarga1}>{item.title}</motion.div>)}
+                </div>                
             </div>
             <div className={styles.contArea}>
                     <div className={styles.contenido}>
@@ -55,7 +57,6 @@ function Guias() {
                     </div>
             </div>
         </motion.div>
-
     </div>
   )
 }

@@ -86,3 +86,37 @@
     text-align: center;
     font-size: 1.4rem;
 }
+
+@media screen and (aspect-ratio < 1) {
+    .BibliotecaCont{
+        flex-direction: column;
+    }
+    .menuCont{
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+        border-right: 0;
+        border-bottom: 1px solid var(--line-color);
+    }
+    .contArea{
+        width: 100%;
+        height: 90%;
+    }
+    .menuItem{
+        width: 25%;
+        height: 90%;
+        border: 0;
+        font-size: 1rem;
+    }
+}
+@media screen and (width < 600px){
+    .menuItem{
+        font-size: 0.8rem;
+    }
+    .titulo0{
+        font-size: 1.6rem;
+    }
+    .descripcion0{
+        font-size: 1rem;
+    }
+}

@@ -71,3 +71,35 @@
 .button:hover{
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (aspect-ratio < 1) {
+    .PanelRegion{
+        width: 90%;
+        height: 90%;
+    }
+    .titulo{
+        font-size: 1.8rem;
+    }
+    .articulo{
+        flex-direction: column;
+    }
+    .art1{
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+    .articulo img{
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+    .pie{
+        justify-content: center;
+    }
+    .button{
+        width: 50%;
+        height: 50%;
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+}
