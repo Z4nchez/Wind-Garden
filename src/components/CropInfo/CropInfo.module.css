@@ -36,6 +36,15 @@
     font-size: 1.2rem;
     overflow-x: hidden;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.articulo1{
+    width: 100%;
+    height: auto;
 }
 .articulo::-webkit-scrollbar{
     display: none;

@@ -24,7 +24,10 @@ function CropInfo({ crop }) {
                 <img src={crop.imagen} alt="" />
             </div>
         </div>
-        <article className={styles.articulo}>{crop.descripcion}</article>
+        <article className={styles.articulo}>
+          <div className={styles.articulo1}>{crop.descripcion}</div>
+          <div className={styles.articulo1}>{crop.descripcion2}</div>
+        </article>
         <div className={styles.pie}>
             <div className={styles.button} onClick={() => setMenuCrop(lastMenuCrop)}>Atrás</div>
         </div>

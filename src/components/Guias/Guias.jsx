@@ -48,6 +48,10 @@ function Guias() {
                         {menuGuide === 3 &&  <PanelGuide actualGuide={actualGuide}></PanelGuide>}
                         {menuGuide === 4 &&  <PanelGuide actualGuide={actualGuide}></PanelGuide>}
                         {menuGuide === 5 &&  <PanelGuide actualGuide={actualGuide}></PanelGuide>}
+                        {menuGuide === 6 &&  <PanelGuide actualGuide={actualGuide}></PanelGuide>}
+                        {menuGuide === 7 &&  <PanelGuide actualGuide={actualGuide}></PanelGuide>}
+                        {menuGuide === 8 &&  <PanelGuide actualGuide={actualGuide}></PanelGuide>}
+                        {menuGuide === 9 &&  <PanelGuide actualGuide={actualGuide}></PanelGuide>}
                     </div>
             </div>
         </motion.div>

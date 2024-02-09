@@ -77,13 +77,17 @@
   height: 25%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 .tittle0{
   font-size: 5rem;
   width: 100%;
   text-align: center;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
 }
 .icon0{
   display: flex;
@@ -122,7 +126,23 @@
   width: 240px;
   color: rgb(150, 50, 0);
 }
-
+.desc2Cont{
+  scale: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.presentation2{
+  scale: 0;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .topBar{
   width: 100%;
   height: 5vh;
@@ -222,10 +242,10 @@
 }
 .module1A p{
   width: 80%;
-  height: auto;
+  height: 30%;
   font-size: 1.2rem;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   text-align: center;
 }
@@ -636,4 +656,194 @@
 }
 .wLink:hover{
   color: rgb(150, 50, 0);
+}
+
+@media screen and (width < 1600px){
+  .tittle0{
+    font-size: 3rem;
+  }
+  .module1A p{
+    font-size: 1rem;
+  }
+  .tittle1A{
+    font-size: 1.2rem;
+  }
+  .presentation{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  .module3B p{
+    height: 100%;
+    width: 80%;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media screen and (width < 800px){
+  .article2{
+    gap: 10px;
+  }
+  .article2 p{
+    font-size: 1rem;
+  }
+  .article2 img{
+    height: 30%;
+  }
+}
+@media screen and (aspect-ratio < 1){
+  .module0A{
+    scale: 0;
+    width: 0;
+  }
+  .tittle0{
+    font-size: 2.8rem;
+  }
+  .module0B{
+    width: 70%;
+  }
+  .tCont{
+    height: 15%;
+  }
+  .icon0{
+    height: 10%;
+  }
+  .button0Cont{
+    height: 10%;
+    font-size: 1rem;
+  }
+  .button0{
+    font-size: 1rem;
+    width: 150px;
+    height: 30px;
+    font-weight: 400;
+  }
+  .button0:hover{
+    width: 180px;
+  }
+  .desc2Cont{
+    scale: 1;
+    width: 100%;
+    height: 45%;
+  }
+  .presentation2{
+    scale: 1;
+    width: 90%;
+    height: auto;
+    font-size: 1.2rem;
+  }
+
+  .button1{
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-right: 1px solid rgba(82, 26, 0, 0.2);
+  }
+  .button1:hover{
+    width: 120px;
+  }
+  .panel1{
+    flex-direction: column;
+  }
+  .module1A{
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+  }
+  .tittle1A{
+    scale: 0;
+    width: 0%;
+    height: 0;
+  }
+  .module1A img{
+    width: auto;
+    height: 30%;
+  }
+  .module1A p{
+    width: auto;
+    height: 80%;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .panel3{
+    flex-direction: column;
+  }
+  .module3A{
+    width: 100%;
+    height: 40%;
+    display: flex;
+  }
+  .module3B{
+    width: 100%;
+    height: 40%;
+  }
+  .module3B p{
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tittle3{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .button3{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+  }
+  .button3:hover{
+    width: 120px;
+  }
+}
+@media screen and (width < 600px){
+  .tittle0{
+    font-size: 2rem;
+  }
+  .presentation2{
+    font-size: 0.9rem;
+  }
+  .tittle2{
+    font-size: 2rem;
+  }
+  .button2{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .button2:hover{
+    width: 120px;
+  }
+  .button0{
+    font-size: 0.8rem;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 600;
+  }
+  .button0:hover{
+    width: 120px;
+  }
+}
+@media screen and (width < 380px){
+  .presentation2{
+    font-size: 0.8rem;
+  }
+  .article2 p{
+    font-size: 0.8rem;
+  }
 }

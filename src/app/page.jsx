@@ -58,15 +58,17 @@ export default function Home() {
           <motion.div className={styles.module0B} initial={"isOff"} animate={isInView === true ? "isOn" : "isOff"} transition={{ duration: 0.6, ease: "easeOut" }} variants={estilosDeCarga2}>
             <div className={styles.tittle0Cont}>
               <div className={styles.tCont} ref={ref}>
-                <h2 className={styles.tittle0}>Wind Garden</h2>
+                <div className={styles.tittle0}>Wind Garden</div>
               </div>              
               <div className={styles.icon0}>
                 <img src="logom.png" alt="" />
               </div>
               <div className={styles.button0Cont}>
-                <Link className={styles.button0} href="#footer">Contactenos</Link>
+                <Link className={styles.button0} href="#footer">Contáctanos</Link>
               </div>
-              
+              <div className={styles.desc2Cont}>
+                <p className={styles.presentation2}>¡Bienvenidos a Wind Garden! Exploramos el fascinante mundo de la agricultura en suelos áridos y semiáridos. Descubre técnicas innovadoras, consejos prácticos y experiencias inspiradoras para cultivar con éxito en condiciones desafiantes. Únete a nuestra comunidad apasionada y cultiva la tierra con conocimiento. ¡Sembremos juntos el futuro!</p>
+              </div>
             </div>          
           </motion.div>
         </div>       

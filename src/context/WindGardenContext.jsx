@@ -12,7 +12,7 @@ export function WindGardenContextProvider({children}) {
 
   const [menuH, setMenuH] = useState(false)
   const [menuCrop, setMenuCrop] = useState("0")
-  const [actualCrop, setActualCrop] = useState({nombre: "", tipo: "", descripcion: "", imagen: ""})
+  const [actualCrop, setActualCrop] = useState({nombre: "", tipo: "", descripcion: "", descripcion2 : "", imagen: ""})
   const [lastMenuCrop, setLastMenuCrop] = useState("0")
   const [menuGuide, setMenuGuide] = useState(-1)
   const [menuMap, setMenuMap] = useState(-1)
